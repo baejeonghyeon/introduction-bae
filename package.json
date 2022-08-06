@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  },
+
+  "homepage": "http://darkness0301.github.io/my-introduction-page",
+
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  }
+}
