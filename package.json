@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  },
+  "homepage": "http://darkness0301.github.io/introduction-bae",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  }
+}
