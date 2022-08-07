@@ -493,13 +493,13 @@ section.about.section{
 
 .introduction-text{
   color: #fff;  
-  font-size: 1.38rem;
+  font-size: 1.5vw;
   font-family: 'HallymGothic-Regular';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2204@1.0/HallymGothic-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   letter-spacing: 0.3px;
-  line-height: 1.5;
+  line-height: 2;
   white-space: nowrap;
 }
 

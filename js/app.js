@@ -10,6 +10,7 @@ const modal_menu = document.querySelector('.menu-modals');
 const header = document.querySelector('header');
 
 // 스크롤에 따른 드래프트 이미지 위치 변경drafts_section
+const about_section = document.getElementById('about');
 const drafts_section = document.getElementById('drafts');
 const my_creations = Array.from(document.querySelectorAll('.creation'));
 
@@ -104,9 +105,10 @@ window.addEventListener('scroll', stickyNavbar);
 // getBoundingClientRect: 엘리먼트의 크기와 뷰포트에 상대적인 위치 정보를 제공하는 DOMRect 객체를 반환
 
 window.addEventListener('scroll', () => {
-  
+
+
   // console.log(window.pageYOffset);
-  if(window.pageYOffset > 700 && window.pageYOffset < 2000){
+  if(window.pageYOffset > window.innerHeight && window.pageYOffset < window.innerHeight * 3){
     for(let i = 0; i < my_creations.length; i++){
       my_creations[i].classList.remove('display-none');
       my_creations[i].style.transform = `translateY(${window.pageYOffset / (drafts_section.getBoundingClientRect().top + drafts_section.offsetHeight) * my_creations[i].dataset.rate}%)`;
